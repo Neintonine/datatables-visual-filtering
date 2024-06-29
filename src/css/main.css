@@ -1,0 +1,102 @@
+:root {
+    --dt-visual-filter-window-width: 20rem;
+    --dt-visual-filter-window-max-height: 40rem;
+
+    --dt-visual-filter-window-background: white;
+    --dt-visual-filter-window-border-color: rgba(0,0,0, 0.25);
+
+    --dt-visual-filter-spinner-size: 2rem;
+    --dt-visual-filter-spinner-border-width: 0.15rem;
+}
+
+.dtVisualFilter__iconWrapper {
+    display: inline-block;
+    vertical-align: sub;
+    padding: 0.5rem;
+
+    white-space: nowrap;
+
+    & * {
+        display: inline;
+    }
+}
+
+.dtVisualFilter__iconNumbering {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.dtVisualFilter__selectionWindow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: var(--dt-visual-filter-window-width);
+    max-height: var(--dt-visual-filter-window-max-height);
+
+    background: var(--dt-visual-filter-window-background);
+    overflow: auto;
+
+    border: 1px solid var(--dt-visual-filter-window-border-color);
+    border-radius: 0.25rem;
+
+    padding: 0.5rem;
+
+    .dtVisualFilter__windowHeader {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: x-large;
+    }
+
+    .dtVisualFilter__filterInput {
+        margin-bottom: 0.175rem;
+        margin-top: 0.175rem;
+    }
+    .dtVisualFilter__searchInput {
+        width: 100%;
+    }
+    .dtVisualFilter__searchContainer {
+        margin-bottom: 0.25rem;
+    }
+}
+
+.dtVisualFilter__spinnerContainer {
+    text-align: center;
+}
+
+.dtVisualFilter__hidden {
+    display: none;
+}
+
+.lds-dual-ring {
+    /* change color here */
+    color: currentColor;
+}
+.lds-dual-ring,
+.lds-dual-ring:after {
+    box-sizing: border-box;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: var(--dt-visual-filter-spinner-size);
+    height: var(--dt-visual-filter-spinner-size);
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: var(--dt-visual-filter-spinner-size);
+    height: var(--dt-visual-filter-spinner-size);
+    border-radius: 50%;
+    border: var(--dt-visual-filter-spinner-border-width) solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

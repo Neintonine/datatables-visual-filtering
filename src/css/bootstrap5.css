@@ -1,0 +1,7 @@
+:root {
+    --dt-visual-filter-window-background: var(--bs-body-bg);
+    --dt-visual-filter-window-border-color: rgba(var(--bs-body-color-rgb), 0.25);
+}
+.dtVisualFilter__iconWrapper {
+    vertical-align: unset;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "datatables-visual-filtering",
+  "version": "1.0.0",
+  "author": "Michel Fedde <contact@iedsoftworks.com>",
+  "description": "A plugin for datatables, that adds visual filtering to a table.",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack watch"
+  },
+  "dependencies": {
+    "datatables.net": "^2.0.8"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "bootstrap": "^5.3.3"
+  }
+}
